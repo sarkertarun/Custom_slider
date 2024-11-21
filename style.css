@@ -1,0 +1,74 @@
+/* Basic Reset */
+body {
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Slides (Images) */
+.flex-center {
+  display: none; /* Hide all slides initially */
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Fixed height for slider */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Navigation Dots */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 90px 5px;
+  background-color: #179221;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #ef0707;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border: none;
+  user-select: none;
+  z-index: 10;
+}
+.prev {
+  left: 240px;
+  top:200px;
+}
+.next {
+  right: 240px;
+  top:200px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
